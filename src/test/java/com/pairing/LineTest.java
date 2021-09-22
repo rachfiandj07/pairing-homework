@@ -21,4 +21,9 @@ public class LineTest {
     void whenYAxisAreIdenticalShouldReturnCorrectLength() {
         assertEquals(5, Line.calculateLength(6, 9, 1, 9), EPS);
     }
+
+    @Test
+    void whenPointDoNoShareSameAxisShouldReturnCorrectLength() {
+        assertEquals(5, Line.calculateLength(0, 0, 3, 4), EPS);
+    }
 }
