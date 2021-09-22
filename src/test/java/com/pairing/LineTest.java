@@ -11,4 +11,9 @@ public class LineTest {
     void whenPointsAreIdenticalShouldReturnZero() {
         assertEquals(0, Line.calculateLength(1, 1, 1, 1), EPS);
     }
+
+    @Test
+    void whenXAxisAreIdenticalShouldReturnCorrectLength() {
+        assertEquals(3, Line.calculateLength(1, 3, 1, 6), EPS);
+    }
 }
